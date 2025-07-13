@@ -62,6 +62,7 @@ UINT_LITERAL             = 0x[0-9a-fA-F]+u|0u|[1-9][0-9]*u
 DECIMAL_FLOAT_LITERAL    = ((-?[0-9]*\.[0-9]+|-?[0-9]+\.[0-9]*)((e|E)(\+|-)?[0-9]+)?f?)|(-?[0-9]+(e|E)(\+|-)?[0-9]+f?)
 HEX_FLOAT_LITERAL        = -?0x((([0-9a-fA-F]*\.[0-9a-fA-F]+|[0-9a-fA-F]+\.[0-9a-fA-F]*)((p|P)(\+|-)?[0-9]+f?)?)|([0-9a-fA-F]+(p|P)(\+|-)?[0-9]+f?))
 PREPROCESSOR_DECLARATION = "#"[^\r\n\{\[]+
+METADATA = "\{\{|\}\}|\$\$|\{\$|\$\}"
 
 IDENT = ([a-zA-Z_][0-9a-zA-Z_][0-9a-zA-Z_]*)|([a-zA-Z_][0-9a-zA-Z_]*)
 GENERIC_PLACEHOLDER = [A-Z]+
